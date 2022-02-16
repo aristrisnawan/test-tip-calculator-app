@@ -1,0 +1,79 @@
+.tipInputs input {
+    /* outline is better than border, because border cause "jumping" of the rest of a content */
+    outline: 2px solid transparent;
+    transition: 200ms all ease-in-out;
+}
+
+.tipInputs input:hover {
+    outline: 2px solid #26c2ae;
+}
+
+.tipInputs label {
+    pointer-events: none;
+}
+
+.tipInputPercentGrid {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    list-style-type: none;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+@media only screen and (min-width: 640px) {
+    .tipInputPercentGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.tipInputPercentGrid li input {
+    width: 100%;
+}
+
+.tipInputCustomLi {
+    padding: 0;
+    background-color: transparent;
+}
+
+.tipInputCustomNumber {
+    margin: 0;
+    color: #547878;
+}
+
+.error {
+    outline: 2px solid #e17457 !important;
+}
+
+.lastMargin {
+    margin-bottom: 1rem;
+}
+
+.dolar {
+    position: relative;
+}
+
+.dolar::before {
+    content: url("./../../images/icon-dollar.svg");
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 100;
+}
+
+.people {
+    position: relative;
+}
+
+.people::before {
+    content: url("./../../images/icon-person.svg");
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 100;
+}

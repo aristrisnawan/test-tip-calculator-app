@@ -1,0 +1,28 @@
+.amountField {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.amountField h2 {
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+}
+
+.amountField p {
+  font-size: 0.8125rem;
+  color: #7f9d9f;
+}
+
+.amountField .amount {
+  font-size: 2rem;
+  color: #26c2ae;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 800px) {
+  .amountField .amount {
+    font-size: 3rem;
+  }
+}
